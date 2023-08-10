@@ -3,6 +3,7 @@ import css from './Searchbar.module.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
+import { BiSearch } from 'react-icons/bi';
 
 class Searchbar extends Component {
   state = {
@@ -31,6 +32,7 @@ class Searchbar extends Component {
         <form onSubmit={this.handleSubmit} className={css.searchForm}>
           <button type="submit" className={css.searchFormButton}>
             <span className={css.searchFormButtonLabel}>Search</span>
+            <BiSearch size={20} />
           </button>
 
           <input
